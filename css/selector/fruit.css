@@ -1,0 +1,16 @@
+* {
+    color: rgb(0, 0, 255);
+}
+body {
+    background-color: rgb(255, 224, 230);
+}
+ul li {
+    color: rgb(255, 0, 0);
+}
+
+.li_3 {
+    color: orange;
+}
+#p_1 {
+    color: pink;
+}
