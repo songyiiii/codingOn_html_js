@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container {
+    width: 1000px;
+    margin: 10px auto;
+    /* background-color: thistle; */
+}
+header {
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+section {
+    height: 600px;
+    width: 650px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: yellowgreen;
+}
+aside {
+    width: 320px;
+    height: 600px;
+    border: 1px solid #ccc;
+    float: right;
+}
+footer {
+    height: 100px;
+    border: 1px solid #ccc;
+    clear: both;
+    padding: 10px;
+}

@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>테두리 - border</title>
+    <title>float속성</title>
     <style>
         div {
-            width: 200px;
+            margin: 10px;
+            width: 100px;
             height: 100px;
-            border-style: solid;
-            border-color: rgb(255, 97, 123);
-            margin-bottom: 10px;
-            display: inline-block;
         }
         .box1 {
-            border-width: 2px;
-            border-radius: 10px 20px 30px 40px;
+            background-color: pink;
+            float: left;
         }
         .box2 {
-            border-width: 2px 5px;
+            background-color: orange;
+            float: left;
         }
         .box3 {
-            border-width: 2px 5px 7px 9px;
+            background-color: yellowgreen;
+            float: right;
+        }
+        .box4 {
+            background-color: hotpink;
+            clear: both;
         }
     </style>
 </head>
@@ -29,5 +32,6 @@
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
+    <div class="box4"></div>
 </body>
 </html>
