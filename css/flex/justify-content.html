@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #wrap {
+            width: 80%;
+            margin: 0 auto;
+            border: 2px solid black;
+            background-color: #838383;
+            display: flex;
+            /* 수평 정렬 - 왼쪽, 오른쪽, 가운데, 균등 정렬 */
+            /* justify-content: flex-start;  -> 주축 방향의 시작을 기준으로 정렬*/
+            /* justify-content: flex-end; -> 주축 방향의 끝을 기준으로 정렬*/
+            /* justify-content: center; -> 주축 방향의 가운데 정렬*/
+            /* justify-content: space-between; -> 주축 방향의 시작과 끝을 맞추고 일정 간격으로 정렬*/
+            /* justify-content: space-around; -> 주축 방향을 기준으로 일정 간격으로 정렬 */
+            justify-content: space-around;
+        }
+        #wrap>div {
+            width: 100px;
+            padding: 10px;
+        }
+        #wrap div:nth-child(1) {
+            background-color: rgb(255, 54, 108);
+        }
+        #wrap div:nth-child(2) {
+            background-color: rgb(1, 212, 54);
+        }
+        #wrap div:nth-child(3) {
+            background-color: rgb(249, 255, 78);
+        }
+        #wrap div:nth-child(4) {
+            background-color: rgb(255, 76, 41);
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction속성</h1>
+    <div id="wrap">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html>

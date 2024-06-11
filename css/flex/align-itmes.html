@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #wrap {
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: #eee;
+            display: flex;
+            /* 수직정렬 */
+            /* align-items:flex-start; -> 교차축(주축과 수직한 축)의 시작을 기준으로 위쪽에 정렬 */
+            /* align-items: center; -> 교차축(주축과 수직한 축)의 시작을 기준으로 가운데 정렬*/
+            /* align-items: flex-end; -> 교차축(주축과 수직한 축)의 시작을 기준으로 아래쪽 정렬*/
+            align-items: center;
+        }
+        #wrap>div {
+            width: 100px;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        #wrap div:nth-child(1) {
+            background-color: rgb(255, 54, 108);
+        }
+        #wrap div:nth-child(2) {
+            background-color: rgb(1, 212, 54);
+        }
+        #wrap div:nth-child(3) {
+            background-color: rgb(249, 255, 78);
+        }
+        #wrap div:nth-child(4) {
+            background-color: rgb(255, 76, 41);
+        }
+        #wrap>div p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction속성</h1>
+    <div id="wrap">
+        <div><p>A</p></div>
+        <div><p>B</p></div>
+        <div><p>C</p></div>
+        <div><p>D</p></div>
+    </div>
+</body>
+</html>

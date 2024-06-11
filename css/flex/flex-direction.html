@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+        #wrap {
+            display: flex;
+            /* row : 주축(진행방향과 수평한 축) 방향을 왼쪽에서 오른쪽으로 지정 */
+            /* row-reverse : 주축(진행방향과 수평한 축) 방향을 오른쪽에서 왼쪽으로 지정 */
+            /* column : 주축(진행방향과 수직인 축) 방향을 위쪽에서 아래로  */
+            /* column-reverse : 주축(진행방향과 수직인 축) 방향을 아래쪽에서 위로  */
+            flex-direction: row;
+            width: 300px;
+            height: 300px;
+            border: 2px solid pink;
+        }
+        #wrap>div {
+            width: 50px;
+            height: 50px;
+        }
+        #wrap div:nth-child(1) {
+            background-color: rgb(255, 54, 108);
+        }
+        #wrap div:nth-child(2) {
+            background-color: rgb(1, 212, 54);
+        }
+        #wrap div:nth-child(3) {
+            background-color: rgb(249, 255, 78);
+        }
+        #wrap div:nth-child(4) {
+            background-color: rgb(255, 76, 41);
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction속성</h1>
+    <div id="wrap">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html>

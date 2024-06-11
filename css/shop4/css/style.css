@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/* 공통 스타일  */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+header .navbar {
+    background-color: rgb(8, 2, 35);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+header .navbar_logo {
+    font-weight: bold;
+    font-size: 28px;
+}
+header .navbar_logo a:hover {
+    color: skyblue;
+}
+header .navbar_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header .navbar_menu li{
+    text-align: center;
+    padding: 10px;
+}
+header .navbar_menu li:hover {
+    background-color: skyblue;
+    border-radius: 4px;
+}
+.navbar_toggleBtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    /* 부모 요소의 상대크기 1em = 16px  */
+    font-size: 1.5em;
+}
+#container {
+    width: 100%;
+}
+#container main {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+#container main #contents {
+    width: 90%;
+    margin: 0 auto;
+}
+#container main #contents h2 {
+    margin-bottom: 20px;
+}
+footer {
+    height: 100px;
+    border-top: 1px solid black;
+    margin-top: 200px;
+}
+footer ul {
+    padding: 10px;
+}
+footer ul li {
+    float: left;
+    border-right: 1px solid #797979;
+}
+footer ul li:last-child {
+    border: none;
+}
+footer ul li a {
+    color: #797979;
+    padding: 10px;
+}
+
+
+/* index style */
+#container main #contents .main_img {
+    text-align: center;
+}
+#container main #contents .main_img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* product style  */
+#contents > div {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: left;
+}
+#contents > div h3 {
+    margin: 10px 0;
+    color: rgb(179, 0, 0);
+}
+#contents > div p {
+    line-height: 1.5;
+}
+#contents #watermelon img,
+#contents #strawberry img  {
+    width: 250px;
+    height: 250px;
+}
+
+/* board style  */
+table {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 13px;
+}
+table th,tr,td {
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+table td {
+    white-space: nowrap;
+}
+table td:nth-child(2) {
+    text-align: left;
+}
+
+/* login style  */
+#contents form {
+    width: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#contents form ul {
+    padding: 20px 40px;
+}
+#contents form ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+#contents form ul li label {
+    width: 130px;
+}
+#contents form input[type='text'],[type='password'] {
+    width: 140px;
+    height: 25px;
+    padding: 4px;
+}
+#contents form input[type='submit'],[type='reset'] {
+    padding: 5px 8px;
+    margin-left: 10px;
+}
+
+/* 태블릿 기준  */
+@media screen and (min-width:768px){
+    header .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+    header .navbar_menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    header .navbar_menu li {
+        padding: 16px 24px;
+    }
+    .navbar_toggleBtn {
+        display: none;
+    }
+    #container main #contents .main_img img{
+        width: 600px;
+    }
+    #contents #watermelon, #contents #strawberry {
+        display: flex;
+    }
+    #contents #watermelon img, #contents #strawberry img {
+        margin-right: 20px;
+    }
+    table th,tr,td {
+        padding: 10px 20px;
+    }
+    #contents form {
+        width: 400px;
+    }
+    #contents form ul li label {
+        width: 80px;
+        float: left;
+    }
+    #contents form input[type='text'],[type='password'] {
+        width: 200px;
+        height: 25px;
+        padding: 4px;
+    }
+}
+/* pc 기준  */
+@media screen and (min-width:1024px) {
+    #container main {
+        margin: 30px auto;
+    }
+    #container main #contents h2 {
+        margin-bottom: 30px;
+    }
+    #container main #contents .main_img img{
+        width: 700px;
+        text-align: center;
+    }
+    #contents form {
+        width: 500px;
+    }
+}

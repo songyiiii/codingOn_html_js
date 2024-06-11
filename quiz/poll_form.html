@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 폼</title>
+</head>
+<body>
+    <h2>설문조사</h2>
+    <form action="poll.php" method="post">
+        <p>
+            <label for="name">이름</label>
+            <input type="text" name="name" autofocus>
+        </p>
+        <p>
+            <label for="email">이메일</label>
+            <input type="email" name="email" placeholder="abc@example.com" required>
+        </p>
+        <p><b>나이</b></p>
+        <label><input type="radio" name="age" value="10"> 10대</label>
+        <label><input type="radio" name="age" value="20"> 20대</label>
+        <label><input type="radio" name="age" value="30"> 30대</label>
+        <label><input type="radio" name="age" value="40"> 40대</label>
+        <label><input type="radio" name="age" value="50"> 50대</label>
+        <label><input type="radio" name="age" value="60~"> 60대 이상</label>
+        <p><b>원하는 강의 (복수 응답 가능합니다)</b></p>
+        <label><input type="checkbox" name="lecture" checked value="html">html</label>
+        <label><input type="checkbox" name="lecture" value="javascript">javascript</label>
+        <label><input type="checkbox" name="lecture" value="css">css</label>
+        <p>
+            <textarea name="content" id="" cols="80" rows="10" placeholder="하고 싶은 말을 써주세요" required></textarea>
+        </p>
+        <div>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+</html>

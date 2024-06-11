@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:flex</title>
+    <style>
+        /* 부모 요소에 flex를 사용 */
+        #wrap {
+            display: flex;
+            /* 방향이 수직 -> column  */
+            flex-direction:column;
+            /* flex 기본값 : row 수평 */
+            /* flex-direction: row; */
+        }
+        #wrap .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 공통 스타일  */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/* 모바일 기준  */
+/* header style */
+header .navbar {
+    background-color: rgb(8, 2, 35);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+header .navbar_logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+header .navbar_logo a:hover {
+    color: skyblue;
+}
+header .navbar_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header .navbar_menu li{
+    text-align: center;
+    padding: 10px;
+}
+header .navbar_menu li:hover {
+    background-color: skyblue;
+    border-radius: 4px;
+}
+
+@media screen and (min-width:768px){
+    header .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+    header .navbar_menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    header .navbar_menu li {
+        padding: 16px 24px;
+    }
+}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+#content {
+    width: 1000px;
+    margin: 30px auto;
+}
+#content h1 {
+    text-align: center;
+}
+#content .product_list {
+    list-style: none;
+    margin-top: 30px;
+}
+#content .product_list li{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    
+}
+#content .product_list li:hover .detail{
+    /* top: 0; */
+    transform: translateY(-200px) ;
+    transition: 0.7s;
+}
+#content .product_list img {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+#content .product_list .detail {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 200px;
+    left: 0;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 2;
+}
+
+/* 순서
+li(부모) -> position: relative , overflow: hidden
+li .detail(자식) -> position: absolute
+li:hover -> transform :translateY()
+이미지 크기 만큼 .detail 박스 크기 설정하기 
+ */
